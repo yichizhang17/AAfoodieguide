@@ -1,6 +1,6 @@
 
 document.querySelector(".icon").addEventListener("click",function(){
-    let x = document.getElementById("myTopnav");
+    let x = document.getElementById("menunav");
       if (x.className === "topnav") {
         x.className += " responsive";
       } else {
