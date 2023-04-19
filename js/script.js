@@ -16,17 +16,14 @@ document.querySelector(".navlink").addEventListener("open",function(){
 
 let path = window.location.pathname;
 
-// Get the filename from the URL path
 let filename = path.split('/').pop();
 
-// Get all the link elements with class 'navlink'
 let links = document.getElementsByClassName('navlink');
 
-// Loop through the link elements and add 'underline' class to the matching link
-for (var i = 0; i < links.length; i++) {
+for (let i = 0; i < links.length; i++) {
   if (links[i].href.endsWith(filename)) {
     links[i].classList.add('clicked');
-    break; // Only underline the first matching link
+    break; 
   }
 }
 
@@ -51,13 +48,10 @@ function showDivs(n) {
 
 window.onscroll = function() {myFunction()};
 
-// Get the navbar
-var navbar = document.getElementById("menunav");
+let navbar = document.getElementById("menunav");
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+let sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
