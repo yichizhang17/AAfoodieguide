@@ -351,9 +351,7 @@ input {
   
   
 }
-input:focus{
-  transform:translate(-10px);
-}
+
 
 label[for="msg"]{
   margin-top: 0;
@@ -562,6 +560,9 @@ textarea{
 div + label{
   line-height: 1.2;
   vertical-align:top;
+}
+input:focus{
+  transform:translate(-10px);
 }
 
 
