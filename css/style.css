@@ -1,6 +1,6 @@
 
 .aa-slides{
-  animation: fadeIn 1s;
+  animation: none;
   width:100%;
 }
 #menu {
@@ -396,6 +396,9 @@ input[type=submit]:hover {
 
     
   @media screen and (min-width: 600px) {
+    .aa-slides{
+      animation: fadeIn 1s;
+    }
     .topnav{
       display: flex;
     flex-direction: column;
