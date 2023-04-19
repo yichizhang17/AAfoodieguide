@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/1df312c189.js" crossorigin="anonymous"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ann Arbor Foodie Guide</title>
+</head>
+<body class="homepage">
+<a class = "skip" href="#main" tabindex=0>Skip to Main Content</a>
+<header>
+    
+<nav class="navbar">
+   
+    <div class="topnav" id="menunav">
+ <ul>
+    <!-- <li class="annarbor">Ann Arbor</li> -->
+    <li><a href="./index.html " class="active navlink">Home</a></li>
+    <li><a href="./food.html" class="navlink">Food</a></li>
+    <li><a href="./contact.html" class="navlink">Contact</a></li>
+    
+    <li><a href="javascript:void(0);" class="icon" ><i class="fa fa-bars" ><span id="menu">filler</span></i></a></li>
+</ul>
+</div>
+</nav>
+
+</header>
+<main id="main">
+<div class="select">
+<h1>Select your favourite type of food:</h1>
+
+</div>
+<!-- Control buttons -->
+<div id="foodbtn" class="foodbtn-container">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('american')"> American</button>
+    <button class="btn" onclick="filterSelection('asian')"> Asian</button>
+    <button class="btn" onclick="filterSelection('sweet')"> Sweet</button>
+    <button class="btn" onclick="filterSelection('drink')"> Drinks</button>
+  </div>
+  
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <div class="container">
+    <div class="filterDiv american">
+        <img src="./images/jollypumpkin.jpeg" alt="Burger and french fries from Jolly Pumpkin">
+        <a href="https://www.jollypumpkin.com/" class="food-link">Jolly Pumpkin</a>
+    </div>
+    <div class="filterDiv asian drink sweet">
+        <img src="./images/sweeting2.jpeg" alt="Icecream from Sweeting">
+        <a href="https://www.sweetingannarbor.com/" class="food-link" >Sweeting</a>
+    </div>
+    <div class="filterDiv american">
+        <img src="./images/zingerman.jpeg" alt="Sandwich from Zingerman's Deli">
+        <a href="https://www.zingermansdeli.com/" class="food-link" >Zingerman's Deli</a>
+    </div>
+    <div class="filterDiv drink">
+        <img src="./images/sweetwater.jpeg" alt="Sweetwaters coffee and tea">
+        <a href="https://www.sweetwaterscafe.com/" class="food-link" >Sweetwaters</a>
+    </div>
+    <div class="filterDiv american">
+        <img src="./images/hopcat.png" alt="Burger and french fries from Hopcat">
+        <a href="https://www.hopcat.com/ann-arbor/home" class="food-link" >Hopcat</a>
+    </div>
+    <div class="filterDiv drink">
+        <img src="./images/sharetea.jpeg" alt="Bubble tea from Sharetea">
+        <a href="https://www.shareteaannarbor.com/home" class="food-link" >Sharetea</a>
+    </div>
+    <div class="filterDiv asian">
+        <img src="./images/lancity.jpeg" alt="Noodles from Lan city">
+        <a href="https://www.lancitynoodles.com/" class="food-link">Lan City</a>
+    </div>
+    <div class="filterDiv asian">
+        <img src="./images/mamasatto.jpeg" alt="Sushi from Mama Satto">
+        <a href="https://www.doordash.com/store/mama-satto-ann-arbor-238441/?gclid=CjwKCAjw__ihBhADEiwAXEazJmtqyr6xVWBn1lEsvXmh30mJltphVN14i_WvRA5TrFXy5s8x3neGFBoCEkMQAvD_BwE&gclsrc=aw.ds&ignore_splash_experience=true&kclickid=_k_CjwKCAjw__ihBhADEiwAXEazJmtqyr6xVWBn1lEsvXmh30mJltphVN14i_WvRA5TrFXy5s8x3neGFBoCEkMQAvD_BwE_k_&utm_adgroup_id=119593491520&utm_campaign=CX_US_SE_SU_GO_ACQ_RMWXXX_12191811269_RSTRNT_%20NB_ACQ_RESTR_DSARestaurant_EVG_CPAx_XXX_Y0391_EN_EN_X_DOOR_GO_SE_DSA_MIDWESTXXX&utm_content=119593491520&utm_creative_id=591223706296&utm_keyword_id=dsa-796078878387&utm_medium=SEMu&utm_source=Google&utm_term=" class="food-link" >Mama Satto</a>
+    </div>
+    <div class="filterDiv sweet">
+        <img src="./images/insomniacookie.jpeg" alt="Cookies from Insomnia cookie">
+        <a href="https://insomniacookies.com/" class="food-link" >Insomnia Cookie</a>
+    </div>
+    <div class="filterDiv sweet asian">
+        <img src="./images/totoro.jpeg" alt="Sushi from Totoro">
+        <a href="https://totoroannarbor.com/" class="food-link" >Totoro</a>
+    </div>
+    <div class="filterDiv sweet">
+        <img src="./images/michiancreamy.jpeg" alt="Icecream from Michigan creamery">
+        <a href="https://michigancreamery.com/" class="food-link" >Michigan Creamery</a>
+    </div>
+    <div class="filterDiv sweet">
+        <img src="./images/detroit.jpeg" alt="Cookies from Detroit Cookie">
+        <a href="https://www.detroitcookieco.com/" class="food-link" >Detroit Cookie</a>
+    </div>
+    <div class="filterDiv asian">
+        <img src="./images/pfchang.jpeg" alt="Fried rice from P.F Chang's">
+        <a href="https://www.pfchangs.com/locations/us/mi/ann-arbor/720-briarwood-circle/9886-ann-arbor.html" class="food-link" >P.F. Chang's</a>
+    </div>
+  </div>
+
+   
+    
+
+
+
+
+
+</main>
+
+
+  <footer>
+      <p>Ann Arbor Foodie Guide <br/>
+        &copy; Yichi Zhang | yichizhg@umich.edu</p>
+    </footer>
+
+<script src="./js/script_food.js"></script>
+
+
+</body>
+</html>

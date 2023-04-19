@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/1df312c189.js" crossorigin="anonymous"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ann Arbor Foodie Guide</title>
+</head>
+<body class="homepage contact-body">
+<a class = "skip" href="#main" tabindex=0>Skip to Main Content</a>
+<header>
+    
+<nav class="navbar">
+   
+    <div class="topnav" id="menunav">
+ <ul>
+    <!-- <li class="annarbor">Ann Arbor</li> -->
+    <li><a href="./index.html " class="active navlink">Home</a></li>
+    <li><a href="./food.html" class="navlink">Food</a></li>
+    <li><a href="./contact.html" class="navlink">Contact</a></li>
+    
+    <li><a href="javascript:void(0);" class="icon" ><i class="fa fa-bars" ><span id="menu">filler</span></i></a></li>
+</ul>
+</div>
+</nav>
+
+</header>
+<main id="main">
+<!-- modify this form HTML and place wherever you want your form -->
+<div class="contact-container">
+<div class="my-pic">
+  <img src="./images/mypic.png" class = "wave" alt="my pic">
+  
+</div>
+ 
+ <div class="form">
+  <form action="https://formspree.io/f/mpzekwqy"
+ method="POST">
+  <fieldset>
+    <legend><h1>Got a Favorite Restaurant to Share? Contact Me!</h1></legend>
+
+    <label for="name_id">Name</label>
+    <input type="text" placeholder="Your Name" id = "name_id" name="name" required>
+
+    <label for="email_id">Email</label>
+    <input type="email" placeholder="Your Email" id = "email_id" name="email" required>
+
+    <label for="phone_id">Phone Number</label>
+    <input type="tel" name="phone" placeholder="123-456-7890" id="phone_id"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    
+
+
+    <label  for="msg">Type A Message</label>
+    <textarea placeholder="Please feel free to share your thoughts with me!" id = "msg" name="mesg" required></textarea><br>
+
+    <!-- <input type="checkbox" checked="checked" name="remember" id = "cBox">  -->
+    <!-- <label  for ="cBox">Remember me</label> -->
+
+    <input type="submit" value = "Send">
+  </fieldset>
+ </form>
+</div>
+</div>
+
+</main>
+
+
+  <footer>
+      <p>Ann Arbor Foodie Guide <br/>
+        &copy; Yichi Zhang | yichizhg@umich.edu</p>
+    </footer>
+
+<script src="./js/script_contact.js"></script>
+
+
+</body>
+</html>
