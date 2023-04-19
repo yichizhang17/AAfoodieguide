@@ -410,8 +410,7 @@ input[type=submit]:hover {
       display: initial;
       float: left;
       margin-left: 17%;
-      /* width: 100%;
-      height: 100%; */
+      height: 60px;
       
     }
     .topnav a.icon {
@@ -574,6 +573,8 @@ div + label{
     .topnav a{
       display: initial;
       margin-left: 0px;
+      height: 80px;
+      padding: 23px 16px;
     }
     .topnav a.icon {
       display: none;
@@ -630,7 +631,7 @@ div + label{
     .aa-slides{
       
       filter:drop-shadow(12px 12px 12px gray);
-      
+      margin-top: 100px;
       height:550px;
       width: 700px;
       
@@ -667,6 +668,8 @@ div + label{
     .select h1{
       font-size: 36px;
       margin-left: 20px;
+      margin-top: 100px;
+      
     }
     .food-type p{
       font-size: 25px;
@@ -688,6 +691,7 @@ div + label{
       }
       legend{
         font-size: 30px;
+        padding-top: 120px;
       }
   }
  /* prefer-reduced-motion */
